@@ -1,0 +1,16 @@
+.steps_to_reproduce {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.ordered_list {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.list_item {
+  &::marker {
+    font-weight: 400;
+  }
+}

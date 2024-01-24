@@ -1,0 +1,49 @@
+@use '@tiket/passport-design-tokens/breakpoint' as b;
+
+.main_poc_2 {
+  padding: 20px;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.back_button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: unset;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.title {
+  margin-top: var(--space-12);
+  text-transform: capitalize;
+  word-break: break-all;
+}
+
+.subtitle {
+  margin-top: var(--space-8);
+  word-break: break-all;
+}
+
+.helper_text {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+  
+  > a {
+    word-break: break-all;
+    text-decoration: underline;
+  }
+}
+
+@include b.breakpoint(desktop) {
+  .main_poc_2 {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

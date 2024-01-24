@@ -1,0 +1,29 @@
+@use '@tiket/passport-design-tokens/breakpoint' as b;
+
+.main_landing {
+  padding: 20px;
+}
+
+.container {
+  margin-top: var(--space-16);
+}
+
+.poc {
+  display: flex;
+  gap: var(--space-8);
+  align-items: center;
+  margin-top: var(--space-8);
+}
+
+.link_poc {
+  display: flex;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@include b.breakpoint(desktop) {
+  .main_landing {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

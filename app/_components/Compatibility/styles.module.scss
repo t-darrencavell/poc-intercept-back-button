@@ -1,0 +1,35 @@
+.compatibility {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.compatibility_list {
+  display: flex;
+  gap: var(--space-8);
+  margin-top: var(--space-8);
+}
+
+.compatibility_item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  border-radius: var(--space-8);
+  padding: var(--space-8) var(--space-12);
+}
+
+.supported {
+  background-color: var(--color-G200);
+
+  &::after {
+    content: '✅';
+  }
+}
+
+.not_supported {
+  background-color: var(--color-R200);
+
+  &::after {
+    content: '❌';
+  }
+}
